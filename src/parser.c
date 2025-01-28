@@ -1,5 +1,3 @@
-<<<<<<< SEARCH
-=======
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,9 +8,8 @@
 
 #include "structs.h"
 
-int main() {
-    // ... existing code ...
-    
+int main()
+{
+
     return 0;
 }
->>>>>>> REPLACE

@@ -1,9 +1,15 @@
-<<<<<<< SEARCH
-// include/structs.h
-=======
-// include/structs.h
+#ifndef STRUCTS_H
+#define STRUCTS_H
 
-typedef struct s_config {
+typedef struct s_map
+{
+    char    **grid;
+    int     width;
+    int     height;
+} t_map;
+
+typedef struct s_config
+{
     char    *north_texture;
     char    *south_texture;
     char    *east_texture;
@@ -13,7 +19,8 @@ typedef struct s_config {
     t_map   map;
 } t_config;
 
-typedef struct s_parser {
+typedef struct s_parser
+{
     t_config    config;
     int         has_north;
     int         has_south;
@@ -23,11 +30,4 @@ typedef struct s_parser {
     int         has_ceiling;
 } t_parser;
 
-typedef struct s_map {
-    char    **grid;
-    int     width;
-    int     height;
-} t_map;
-
-// ... any existing content ...
->>>>>>> REPLACE
+#endif
